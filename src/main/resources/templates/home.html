@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Home</title>
+	</head>
+	<body>
+	    <h1>Home</h1>
+	
+	    <form method="get" th:action="@{/adminPage}">
+	        <input type="submit" value="AdminPageへ">
+	    </form>
+	
+	    <form method="get" th:action="@{/userPage}">
+	        <input type="submit" value="UserPageへ">
+	    </form>
+	
+	    <form method="post" th:action="@{/logout}">
+	        <input type="submit" value="ログアウト">
+	    </form>
+	</body>
+</html>
